@@ -187,6 +187,9 @@ button{
     color: var(--second-color);
 }
 
+.error-message{
+    color: red;
+}
 /*================== Effects =====================*/
 
 .form_btn, .form_main_btn_login {
