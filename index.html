@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--======== link css ======-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!--======== link rexicon ======-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <title>Authify - Login Page</title>
+</head>
+<body>
+    <form id="content-form">
+        <div class="form__header" >
+            <div class="form_header_text" >
+                <h1 class="form__title" >Login</h1>
+                <p class="form__text" >Hi, welcome back 👋</p>
+            </div>
+            <div class="form_header_btns flex-column" >
+                <button class="form_btn form_header_btn_google" >
+                    <i class="ri-google-line form_header_icon"></i>
+                    Login with Google
+                </button>
+                <button class="form_btn form_header_btn_github" >
+                    <i class="ri-github-fill form_header_icon"></i>
+                    Login with Google
+                </button>
+            </div>
+            <div class="form_header_text_option" >
+                <div class="line" style="margin-right: 10px;" ></div>
+                <p class="form_text_option" >Or Login with Email</p>
+                <div class="line" style="margin-left: 10px;"></div>
+            </div>
+        </div>
+        <div class="forma__main">
+            <label for="email">Email</label>
+            <div class="form_main_input">
+                <input id="email-field" type="email" placeholder="Eg. Authify2024@gmail.com" required>
+                <small class="error-message" id="email-error"></small>
+            </div>
+            
+            <label for="password">Password</label>
+            <div class="form_main_input">
+                <input id="password-field" type="password" placeholder="Enter your password" required>
+                <i id="toggle-password" class="ri-eye-off-line"></i>
+                <small class="error-message" id="password-error"></small>
+            </div>
+        
+            <div class="forma_main_remember_forgot">
+                <div class="form_main_checkbox_remenber">
+                    <input type="checkbox" id="remember-checkbox">
+                    <label for="remember-checkbox" class="form_label_checkbox">Remember Me</label>
+                </div>
+                <a class="form_main_link_forgot" href="#">Forgot Password?</a>
+            </div>
+        
+            <button class="form_main_btn_login" id="login-btn">Login</button>
+            
+            <p class="form_main_registered">
+                Not registered yet?
+                <a href="#">Create an account <i class="ri-arrow-right-up-line"></i></a>
+            </p>
+        </div>
+        
+    </form>    
+    <!--====== script js ======-->
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
